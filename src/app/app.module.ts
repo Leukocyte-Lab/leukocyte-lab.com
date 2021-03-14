@@ -11,7 +11,7 @@ import { ThemeModule } from './@theme/theme.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ThemeModule.forRoot()
   ],
