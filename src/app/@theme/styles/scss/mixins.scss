@@ -1,0 +1,79 @@
+@mixin resetAppearance {
+  appearance: none;
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  text-fill: none;
+  -webkit-text-fill: none;
+
+  filter: none !important;
+
+  &:-webkit-autofill {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      transition: background-color 9999s ease-in-out 0s;
+      -webkit-text-fill-color: $white;
+    }
+  }
+
+  &:autofill {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      transition: background-color 9999s ease-in-out 0s;
+      -webkit-text-fill-color: $white;
+    }
+  }
+
+  &:autofill,
+  &:-moz-autofill,
+  &:-moz-autofill-preview {
+    filter: none;
+  }
+}
+
+@mixin HardwareAccelerationEnabler {
+  transform: translate3d(0, 0, 0);
+  perspective: none;
+  will-change: transform;
+  transition: transform 0.001s;
+}
+
+@mixin RemoveScrollbar {
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  * {
+    scrollbar-width: none;
+  }
+}
+
+@mixin DefaultHighlighter {
+  *:not(.badge) {
+    &::selection {
+      appearance: none;
+      -webkit-appearance: none;
+      -webkit-appearance: menulist-button;
+      -webkit-select-appearance: none;
+      background-color: rgba($white, 0.99);
+      color: $dark;
+      fill: $dark;
+      text-shadow: none;
+    }
+  }
+
+  .badge {
+    &::selection {
+      appearance: none;
+      background-color: transparent;
+    }
+  }
+}
