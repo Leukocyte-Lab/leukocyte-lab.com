@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lkc-root',
+  selector: '[lkc-root]',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
