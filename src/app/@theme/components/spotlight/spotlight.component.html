@@ -1,9 +1,9 @@
-<div [ngClass]="['spotlight', 'spotlight-container', 'spotlight--' + type]">
-  <ng-content class="spotlight spolight-image"></ng-content>
-  <div class="spotlight spolight-title">
+<div [ngClass]="['spotlight', 'spotlight-container', 'spotlight-container--' + type]">
+  <ng-content class="spotlight spotlight-image"></ng-content>
+  <div class="spotlight spotlight-title">
     <ng-content select="[lkc-spotlight-title]"></ng-content>
   </div>
-  <div class="spotlight spolight-content">
+  <div class="spotlight spotlight-content">
     <ng-content select="[lkc-spotlight-content]"></ng-content>
   </div>
 </div>
