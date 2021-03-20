@@ -1,0 +1,11 @@
+<div
+  class="column column-container column--dual"
+  [style.grid-template-columns]="columns"
+>
+  <div class="column col-1">
+    <ng-content select="[lkc-col-content][col-1]"></ng-content>
+  </div>
+  <div class="column col-2">
+    <ng-content select="[lkc-col-content][col-2]"></ng-content>
+  </div>
+</div>
