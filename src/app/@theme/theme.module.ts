@@ -17,6 +17,9 @@ import { QualColumnComponent } from 'src/app/@theme/layouts/column/qual-column/q
 import { QuadGridComponent } from 'src/app/@theme/layouts/grid/quad-grid/quad-grid.component';
 import { HexGridComponent } from 'src/app/@theme/layouts/grid/hex-grid/hex-grid.component';
 
+// Spotlight
+import { SpotlightComponent } from './components/spotlight/spotlight.component';
+
 export const components = [
   BannerComponent,
   MainBannerComponent,
@@ -27,7 +30,9 @@ export const components = [
   QualColumnComponent,
 
   QuadGridComponent,
-  HexGridComponent
+  HexGridComponent,
+
+  SpotlightComponent
 ];
 
 export const directives = [];
