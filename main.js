@@ -1,5 +1,44 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
+/***/ "+4Xn":
+/*!****************************************************************************!*\
+  !*** ./src/app/@theme/layouts/column/dual-column/dual-column.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: DualColumnComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DualColumnComponent", function() { return DualColumnComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+const _c0 = ["lkc-dual-column", ""];
+const _c1 = [[["", "lkc-col-content", "", "col-1", ""]], [["", "lkc-col-content", "", "col-2", ""]]];
+const _c2 = ["[lkc-col-content][col-1]", "[lkc-col-content][col-2]"];
+class DualColumnComponent {
+    constructor() {
+        this.columns = '1fr 1fr';
+    }
+    ngOnInit() { }
+}
+DualColumnComponent.ɵfac = function DualColumnComponent_Factory(t) { return new (t || DualColumnComponent)(); };
+DualColumnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DualColumnComponent, selectors: [["", "lkc-dual-column", ""]], inputs: { columns: "columns" }, attrs: _c0, ngContentSelectors: _c2, decls: 5, vars: 2, consts: [[1, "column", "column-container", "column--dual"], [1, "column", "col-1"], [1, "column", "col-2"]], template: function DualColumnComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](4, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("grid-template-columns", ctx.columns);
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJkdWFsLWNvbHVtbi5jb21wb25lbnQuc2NzcyJ9 */"] });
+
+
+/***/ }),
+
 /***/ 0:
 /*!***************************!*\
   !*** multi ./src/main.ts ***!
@@ -8,6 +47,147 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! /home/runner/work/leukocyte-lab.com/leukocyte-lab.com/src/main.ts */"zUnb");
+
+
+/***/ }),
+
+/***/ "3t1B":
+/*!*******************************************************************************!*\
+  !*** ./src/app/@theme/components/banner/main-banner/main-banner.component.ts ***!
+  \*******************************************************************************/
+/*! exports provided: MainBannerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainBannerComponent", function() { return MainBannerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var src_app_theme_layouts_column_dual_column_dual_column_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/@theme/layouts/column/dual-column/dual-column.component */ "+4Xn");
+
+
+const _c0 = ["lkc-main-banner", ""];
+class MainBannerComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+MainBannerComponent.ɵfac = function MainBannerComponent_Factory(t) { return new (t || MainBannerComponent)(); };
+MainBannerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MainBannerComponent, selectors: [["", "lkc-main-banner", ""]], attrs: _c0, decls: 24, vars: 1, consts: [["lkc-dual-column", "", 1, "banner", "main-banner", 3, "columns"], ["lkc-col-content", "", "col-1", ""], [1, "logo", "logo-font", "logo-font--white", "logo-font--horizon"], ["src", "assets/images/font-full-white-xl.svg", "alt", "Leukocyte-Lab Co., Ltd.", 1, "logo", "logo-image"], [1, "banner", "banner-header"], [1, "title", "font--seo-only"], [1, "title", "font-bold"], [1, "paragraph"], [1, "font--seo-only"], ["lkc-col-content", "", "col-2", ""], [1, "logo", "logo-graph", "logo-graph--main-complex"], ["src", "assets/images/main-logo-taton-white-alpha.svg", "alt", "", 1, "logo", "logo-image"]], template: function MainBannerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "header", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h1", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Leukocyte-Lab Co., Ltd.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "h1", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "\u76E7\u6C2A\u8CFD\u5FD2\u80A1\u4EFD\u6709\u9650\u516C\u53F8");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " Look After Your Site\uFF0C\u662F\u6211\u5011\u5C0D\u5BA2\u6236\u7684\u627F\u8AFE ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "span", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "\uFF0C");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " \u63D0\u5347\u514D\u75AB\u529B\u662F\u9810\u9632\u75BE\u75C5\u4FB5\u8972\u7684\u6700\u4F73\u65B9\u5F0F\uFF0C\u8CC7\u5B89\u9632\u8B77\u4E5F\u662F\u5982\u6B64 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, " \u552F\u6709\u63D0\u5347\u6574\u9AD4\u8CC7\u5B89\u514D\u75AB\u529B\u624D\u80FD\u963B\u7D55\u99ED\u5BA2\u4FB5\u5165\u8207\u964D\u4F4E\u640D\u5931 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "span", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "img", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("columns", "1fr 480px");
+    } }, directives: [src_app_theme_layouts_column_dual_column_dual_column_component__WEBPACK_IMPORTED_MODULE_1__["DualColumnComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLWJhbm5lci5jb21wb25lbnQuc2NzcyJ9 */"] });
+
+
+/***/ }),
+
+/***/ "6a3b":
+/*!********************************************************************************!*\
+  !*** ./src/app/@theme/layouts/column/single-column/single-column.component.ts ***!
+  \********************************************************************************/
+/*! exports provided: SingleColumnComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleColumnComponent", function() { return SingleColumnComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+const _c0 = ["lkc-single-column", ""];
+const _c1 = ["*"];
+class SingleColumnComponent {
+    constructor() { }
+    ngOnInit() { }
+}
+SingleColumnComponent.ɵfac = function SingleColumnComponent_Factory(t) { return new (t || SingleColumnComponent)(); };
+SingleColumnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SingleColumnComponent, selectors: [["", "lkc-single-column", ""]], attrs: _c0, ngContentSelectors: _c1, decls: 3, vars: 0, consts: [[1, "column", "column-container", "column--single"], [1, "column", "col-1"]], template: function SingleColumnComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzaW5nbGUtY29sdW1uLmNvbXBvbmVudC5zY3NzIn0= */"] });
+
+
+/***/ }),
+
+/***/ "8lR5":
+/*!****************************************************************************!*\
+  !*** ./src/app/@theme/layouts/column/qual-column/qual-column.component.ts ***!
+  \****************************************************************************/
+/*! exports provided: QualColumnComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QualColumnComponent", function() { return QualColumnComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+const _c0 = ["lkc-qual-column", ""];
+const _c1 = [[["", "lkc-col-content", "", "col-1", ""]], [["", "lkc-col-content", "", "col-2", ""]], [["", "lkc-col-content", "", "col-3", ""]], [["", "lkc-col-content", "", "col-4", ""]]];
+const _c2 = ["[lkc-col-content][col-1]", "[lkc-col-content][col-2]", "[lkc-col-content][col-3]", "[lkc-col-content][col-4]"];
+class QualColumnComponent {
+    constructor() {
+        this.columns = '1fr 1fr 1fr 1fr';
+    }
+    ngOnInit() { }
+}
+QualColumnComponent.ɵfac = function QualColumnComponent_Factory(t) { return new (t || QualColumnComponent)(); };
+QualColumnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: QualColumnComponent, selectors: [["", "lkc-qual-column", ""]], inputs: { columns: "columns" }, attrs: _c0, ngContentSelectors: _c2, decls: 9, vars: 2, consts: [[1, "column", "column-container", "column--qual"], [1, "column", "col-1"], [1, "column", "col-2"], [1, "column", "col-3"], [1, "column", "col-4"]], template: function QualColumnComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](4, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](6, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](8, 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("grid-template-columns", ctx.columns);
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJxdWFsLWNvbHVtbi5jb21wb25lbnQuc2NzcyJ9 */"] });
 
 
 /***/ }),
@@ -40,6 +220,111 @@ const environment = {
 
 /***/ }),
 
+/***/ "BBMM":
+/*!********************************************************************!*\
+  !*** ./src/app/@theme/components/spotlight/spotlight.component.ts ***!
+  \********************************************************************/
+/*! exports provided: SpotlightType, SpotlightComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpotlightType", function() { return SpotlightType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpotlightComponent", function() { return SpotlightComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
+
+const _c0 = ["lkc-spotlight", ""];
+const _c1 = ["*", [["", "lkc-spotlight-title", ""]], [["", "lkc-spotlight-content", ""]]];
+const _c2 = function (a2) { return ["spotlight", "spotlight-container", a2]; };
+const _c3 = ["*", "[lkc-spotlight-title]", "[lkc-spotlight-content]"];
+var SpotlightType;
+(function (SpotlightType) {
+    SpotlightType[SpotlightType["left"] = 0] = "left";
+    SpotlightType[SpotlightType["right"] = 1] = "right";
+})(SpotlightType || (SpotlightType = {}));
+class SpotlightComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+SpotlightComponent.ɵfac = function SpotlightComponent_Factory(t) { return new (t || SpotlightComponent)(); };
+SpotlightComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SpotlightComponent, selectors: [["", "lkc-spotlight", ""]], inputs: { type: "type" }, attrs: _c0, ngContentSelectors: _c3, decls: 6, vars: 3, consts: [[3, "ngClass"], [1, "spotlight", "spotlight-title"], [1, "spotlight", "spotlight-content"]], template: function SpotlightComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](1, 0, ["class", "spotlight spotlight-image"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](3, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](5, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](1, _c2, "spotlight-container--" + ctx.type));
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcG90bGlnaHQuY29tcG9uZW50LnNjc3MifQ== */"] });
+
+
+/***/ }),
+
+/***/ "Hh88":
+/*!*********************************************************************!*\
+  !*** ./src/app/@theme/components/banner/banner/banner.component.ts ***!
+  \*********************************************************************/
+/*! exports provided: BannerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BannerComponent", function() { return BannerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+const _c0 = ["lkc-banner", ""];
+const _c1 = [[["", "lkc-banner-content", ""]]];
+const _c2 = ["[lkc-banner-content]"];
+class BannerComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+BannerComponent.ɵfac = function BannerComponent_Factory(t) { return new (t || BannerComponent)(); };
+BannerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BannerComponent, selectors: [["", "lkc-banner", ""]], attrs: _c0, ngContentSelectors: _c2, decls: 2, vars: 0, consts: [[1, "banner", "banner-container"]], template: function BannerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJiYW5uZXIuY29tcG9uZW50LnNjc3MifQ== */"] });
+
+
+/***/ }),
+
+/***/ "LHMA":
+/*!********************************************************************!*\
+  !*** ./src/app/@theme/layouts/grid/hex-grid/hex-grid.component.ts ***!
+  \********************************************************************/
+/*! exports provided: HexGridComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HexGridComponent", function() { return HexGridComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+class HexGridComponent {
+    constructor() { }
+    ngOnInit() { }
+}
+HexGridComponent.ɵfac = function HexGridComponent_Factory(t) { return new (t || HexGridComponent)(); };
+HexGridComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HexGridComponent, selectors: [["agh-hex-grid"]], decls: 2, vars: 0, template: function HexGridComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "hex-grid works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJoZXgtZ3JpZC5jb21wb25lbnQuc2NzcyJ9 */"] });
+
+
+/***/ }),
+
 /***/ "Sy1n":
 /*!**********************************!*\
   !*** ./src/app/app.component.ts ***!
@@ -54,16 +339,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
 
 
-const _c0 = ["lkc-root", ""];
 class AppComponent {
     constructor() {
         this.title = 'leukocyte-lab';
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["", "lkc-root", ""]], attrs: _c0, decls: 1, vars: 0, template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "router-outlet");
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["lkc-root"]], decls: 2, vars: 0, consts: [[1, "viewport", "viewport-entry"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "router-outlet");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */"] });
+
+
+/***/ }),
+
+/***/ "YNm+":
+/*!********************************************************************************!*\
+  !*** ./src/app/@theme/layouts/column/triple-column/triple-column.component.ts ***!
+  \********************************************************************************/
+/*! exports provided: TripleColumnComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TripleColumnComponent", function() { return TripleColumnComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+const _c0 = ["lkc-triple-column", ""];
+const _c1 = [[["", "lkc-col-content", "", "col-1", ""]], [["", "lkc-col-content", "", "col-2", ""]], [["", "lkc-col-content", "", "col-3", ""]]];
+const _c2 = ["[lkc-col-content][col-1]", "[lkc-col-content][col-2]", "[lkc-col-content][col-3]"];
+class TripleColumnComponent {
+    constructor() {
+        this.columns = '1fr 1fr 1fr';
+    }
+    ngOnInit() { }
+}
+TripleColumnComponent.ɵfac = function TripleColumnComponent_Factory(t) { return new (t || TripleColumnComponent)(); };
+TripleColumnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TripleColumnComponent, selectors: [["", "lkc-triple-column", ""]], inputs: { columns: "columns" }, attrs: _c0, ngContentSelectors: _c2, decls: 7, vars: 2, consts: [[1, "column", "column-container", "column--triple"], [1, "column", "col-1"], [1, "column", "col-2"], [1, "column", "col-3"]], template: function TripleColumnComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](4, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](6, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("grid-template-columns", ctx.columns);
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ0cmlwbGUtY29sdW1uLmNvbXBvbmVudC5zY3NzIn0= */"] });
 
 
 /***/ }),
@@ -104,6 +432,32 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector
 
 /***/ }),
 
+/***/ "aFBf":
+/*!**********************************************************************!*\
+  !*** ./src/app/@theme/layouts/grid/quad-grid/quad-grid.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: QuadGridComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuadGridComponent", function() { return QuadGridComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+class QuadGridComponent {
+    constructor() { }
+    ngOnInit() { }
+}
+QuadGridComponent.ɵfac = function QuadGridComponent_Factory(t) { return new (t || QuadGridComponent)(); };
+QuadGridComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: QuadGridComponent, selectors: [["agh-quad-grid"]], decls: 2, vars: 0, template: function QuadGridComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "quad-grid works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJxdWFkLWdyaWQuY29tcG9uZW50LnNjc3MifQ== */"] });
+
+
+/***/ }),
+
 /***/ "vTDv":
 /*!****************************************!*\
   !*** ./src/app/@theme/theme.module.ts ***!
@@ -120,12 +474,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var src_app_theme_components_banner_banner_banner_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/@theme/components/banner/banner/banner.component */ "Hh88");
+/* harmony import */ var src_app_theme_components_banner_main_banner_main_banner_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/@theme/components/banner/main-banner/main-banner.component */ "3t1B");
+/* harmony import */ var src_app_theme_layouts_column_single_column_single_column_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/@theme/layouts/column/single-column/single-column.component */ "6a3b");
+/* harmony import */ var src_app_theme_layouts_column_dual_column_dual_column_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/@theme/layouts/column/dual-column/dual-column.component */ "+4Xn");
+/* harmony import */ var src_app_theme_layouts_column_triple_column_triple_column_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/@theme/layouts/column/triple-column/triple-column.component */ "YNm+");
+/* harmony import */ var src_app_theme_layouts_column_qual_column_qual_column_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/@theme/layouts/column/qual-column/qual-column.component */ "8lR5");
+/* harmony import */ var src_app_theme_layouts_grid_quad_grid_quad_grid_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! src/app/@theme/layouts/grid/quad-grid/quad-grid.component */ "aFBf");
+/* harmony import */ var src_app_theme_layouts_grid_hex_grid_hex_grid_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! src/app/@theme/layouts/grid/hex-grid/hex-grid.component */ "LHMA");
+/* harmony import */ var _components_spotlight_spotlight_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/spotlight/spotlight.component */ "BBMM");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+
+// Banner
+
+
+// Column
 
 
 
 
-const components = [];
+// Grid
+
+
+// Spotlight
+
+
+const components = [
+    src_app_theme_components_banner_banner_banner_component__WEBPACK_IMPORTED_MODULE_3__["BannerComponent"],
+    src_app_theme_components_banner_main_banner_main_banner_component__WEBPACK_IMPORTED_MODULE_4__["MainBannerComponent"],
+    src_app_theme_layouts_column_single_column_single_column_component__WEBPACK_IMPORTED_MODULE_5__["SingleColumnComponent"],
+    src_app_theme_layouts_column_dual_column_dual_column_component__WEBPACK_IMPORTED_MODULE_6__["DualColumnComponent"],
+    src_app_theme_layouts_column_triple_column_triple_column_component__WEBPACK_IMPORTED_MODULE_7__["TripleColumnComponent"],
+    src_app_theme_layouts_column_qual_column_qual_column_component__WEBPACK_IMPORTED_MODULE_8__["QualColumnComponent"],
+    src_app_theme_layouts_grid_quad_grid_quad_grid_component__WEBPACK_IMPORTED_MODULE_9__["QuadGridComponent"],
+    src_app_theme_layouts_grid_hex_grid_hex_grid_component__WEBPACK_IMPORTED_MODULE_10__["HexGridComponent"],
+    _components_spotlight_spotlight_component__WEBPACK_IMPORTED_MODULE_11__["SpotlightComponent"]
+];
 const directives = [];
 const entryComponents = [];
 class ThemeModule {
@@ -141,15 +527,31 @@ class ThemeModule {
     }
 }
 ThemeModule.ɵfac = function ThemeModule_Factory(t) { return new (t || ThemeModule)(); };
-ThemeModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: ThemeModule });
-ThemeModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ providers: [], imports: [[
+ThemeModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({ type: ThemeModule });
+ThemeModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ providers: [], imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormsModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]
         ], _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](ThemeModule, { imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵsetNgModuleScope"](ThemeModule, { declarations: [src_app_theme_components_banner_banner_banner_component__WEBPACK_IMPORTED_MODULE_3__["BannerComponent"],
+        src_app_theme_components_banner_main_banner_main_banner_component__WEBPACK_IMPORTED_MODULE_4__["MainBannerComponent"],
+        src_app_theme_layouts_column_single_column_single_column_component__WEBPACK_IMPORTED_MODULE_5__["SingleColumnComponent"],
+        src_app_theme_layouts_column_dual_column_dual_column_component__WEBPACK_IMPORTED_MODULE_6__["DualColumnComponent"],
+        src_app_theme_layouts_column_triple_column_triple_column_component__WEBPACK_IMPORTED_MODULE_7__["TripleColumnComponent"],
+        src_app_theme_layouts_column_qual_column_qual_column_component__WEBPACK_IMPORTED_MODULE_8__["QualColumnComponent"],
+        src_app_theme_layouts_grid_quad_grid_quad_grid_component__WEBPACK_IMPORTED_MODULE_9__["QuadGridComponent"],
+        src_app_theme_layouts_grid_hex_grid_hex_grid_component__WEBPACK_IMPORTED_MODULE_10__["HexGridComponent"],
+        _components_spotlight_spotlight_component__WEBPACK_IMPORTED_MODULE_11__["SpotlightComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormsModule"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]], exports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]] }); })();
+        _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]], exports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], src_app_theme_components_banner_banner_banner_component__WEBPACK_IMPORTED_MODULE_3__["BannerComponent"],
+        src_app_theme_components_banner_main_banner_main_banner_component__WEBPACK_IMPORTED_MODULE_4__["MainBannerComponent"],
+        src_app_theme_layouts_column_single_column_single_column_component__WEBPACK_IMPORTED_MODULE_5__["SingleColumnComponent"],
+        src_app_theme_layouts_column_dual_column_dual_column_component__WEBPACK_IMPORTED_MODULE_6__["DualColumnComponent"],
+        src_app_theme_layouts_column_triple_column_triple_column_component__WEBPACK_IMPORTED_MODULE_7__["TripleColumnComponent"],
+        src_app_theme_layouts_column_qual_column_qual_column_component__WEBPACK_IMPORTED_MODULE_8__["QualColumnComponent"],
+        src_app_theme_layouts_grid_quad_grid_quad_grid_component__WEBPACK_IMPORTED_MODULE_9__["QuadGridComponent"],
+        src_app_theme_layouts_grid_hex_grid_hex_grid_component__WEBPACK_IMPORTED_MODULE_10__["HexGridComponent"],
+        _components_spotlight_spotlight_component__WEBPACK_IMPORTED_MODULE_11__["SpotlightComponent"]] }); })();
 
 
 /***/ }),
