@@ -16,12 +16,38 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-
+  color: $white;
 
   > .column {
     &-container {
       width: calc(100% - #{$main-column-gap} * 2);
       height: 480px;
+    }
+
+    .col-1,
+    .col-2 {
+      & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+
+  .banner {
+    &-header {
+      margin: 12px 0;
+      margin-right: 80px;
+
+      > h1.title {
+        font-size: 32px;
+      }
+
+      > p.paragraph {
+        margin: 12px 0;
+        font-size: 16px;
+        line-height: 1.6;
+      }
     }
   }
 }
