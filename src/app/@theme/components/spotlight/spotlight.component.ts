@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+export enum SpotlightType {
+  left,
+  right
+}
 
 @Component({
   selector: '[lkc-spotlight]',
@@ -6,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./spotlight.component.scss']
 })
 export class SpotlightComponent implements OnInit {
+  @Input() type!: keyof typeof SpotlightType;
 
   constructor() { }
 
