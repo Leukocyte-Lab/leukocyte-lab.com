@@ -1,0 +1,12 @@
+.viewport {
+  &-entry {
+    background-color: $tone;
+
+    &,
+    & > div {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+    }
+  }
+}
