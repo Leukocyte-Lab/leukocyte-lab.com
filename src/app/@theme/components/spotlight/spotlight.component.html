@@ -1,5 +1,9 @@
 <div class="spotlight spotlight-container">
   <ng-content class="spotlight spolight-image"></ng-content>
-  <ng-content select="[lkc-spotlight-title]" class="spotlight spolight-title"></ng-content>
-  <ng-content select="[lkc-spotlight-content]" class="spotlight spolight-content"></ng-content>
+  <div class="spotlight spolight-title">
+    <ng-content select="[lkc-spotlight-title]"></ng-content>
+  </div>
+  <div class="spotlight spolight-content">
+    <ng-content select="[lkc-spotlight-content]"></ng-content>
+  </div>
 </div>
