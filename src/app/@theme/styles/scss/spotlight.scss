@@ -1,0 +1,35 @@
+.spotlight {
+  &-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 64px $main-column-gap;
+    box-sizing: border-box;
+    background-color: $white;
+
+    &--left {
+      grid-template-areas:
+        'image title'
+        'image content';
+    }
+
+    &--right {
+      grid-template-areas:
+        'title image'
+        'content image';
+    }
+  }
+
+  &-image {
+    grid-area: image;
+  }
+
+  &-title {
+    grid-area: title;
+  }
+
+  &-content {
+    grid-area: content;
+  }
+}

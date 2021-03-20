@@ -1,0 +1,22 @@
+.logo {
+  &-font,
+  &-graph {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+
+  &-font {
+    &--horizon {
+      height: auto;
+    }
+  }
+
+  &-graph {
+    height: 100%;
+
+    &--main-complex {
+
+    }
+  }
+}
