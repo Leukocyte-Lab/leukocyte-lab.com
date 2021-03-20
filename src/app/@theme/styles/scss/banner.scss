@@ -32,12 +32,27 @@
         justify-content: center;
       }
     }
+
+    .col-1 {
+      box-sizing: border-box;
+      padding-right: 72px;
+    }
+
+    .col-2 {
+      & > div {
+        align-items: center;
+      }
+
+      .logo-graph {
+        height: 640px;
+        width: 640px;
+      }
+    }
   }
 
   .banner {
     &-header {
       margin: 12px 0;
-      margin-right: 80px;
 
       > h1.title {
         font-size: 32px;
