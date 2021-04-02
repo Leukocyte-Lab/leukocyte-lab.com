@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --hmr=true",
+    "start": "ng serve",
     "build": "ng build",
     "server": "ng run leukocyte-lab:server",
     "prerender": "angular-prerender",
