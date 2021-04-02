@@ -1,33 +1,70 @@
+[lkc-spotlight] {
+  &:nth-of-type(odd) {
+    > .spotlight-container {
+      background-color: $gray-4;
+    }
+  }
+
+  &:nth-of-type(even) {
+    > .spotlight-container {
+      background-color: $white;
+    }
+  }
+}
+
 .spotlight {
   &-container {
     position: relative;
     width: 100%;
     height: 100%;
     display: grid;
-    gap: 16px;
-    padding: 64px $main-column-gap;
+    row-gap: 32px;
+    box-sizing: border-box;
+    padding: 32px 16px;
+    grid-template-rows: 64px 0.5 0.5fr 64px;
     box-sizing: border-box;
     background-color: $white;
 
     &--left {
+      grid-template-columns: $main-column-gap $main-column-gap auto $main-column-gap;
       grid-template-areas:
-        'image title'
-        'image content';
+        'image image PLACEHOLDER-1 PLACEHOLDER-R'
+        'image image title         PLACEHOLDER-R'
+        'image image content       PLACEHOLDER-R'
+        'image image PLACEHOLDER-2 PLACEHOLDER-R';
+
+      .spotlight {
+        &-image {
+          justify-content: flex-end;
+        }
+      }
     }
 
     &--right {
+      grid-template-columns: $main-column-gap auto $main-column-gap $main-column-gap;
       grid-template-areas:
-        'title image'
-        'content image';
+      'PLACEHOLDER-L PLACEHOLDER-1 image image'
+      'PLACEHOLDER-L title         image image'
+      'PLACEHOLDER-L content       image image'
+      'PLACEHOLDER-L PLACEHOLDER-2 image image';
+
+      .spotlight {
+        &-image {
+          justify-content: flex-start;
+        }
+      }
     }
   }
 
   &-image {
     grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     > img {
       width: 100%;
-      height: auto;
+      height: 100%;
     }
   }
 
@@ -35,7 +72,7 @@
     grid-area: title;
 
     > h1.title {
-
+      margin-bottom: 8px;
     }
   }
 
