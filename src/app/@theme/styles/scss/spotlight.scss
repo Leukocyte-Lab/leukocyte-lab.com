@@ -1,35 +1,127 @@
+[lkc-spotlight] {
+  &:nth-of-type(odd) {
+    > .spotlight-container {
+      background-color: $gray-6;
+    }
+  }
+
+  &:nth-of-type(even) {
+    > .spotlight-container {
+      background-color: $white;
+    }
+  }
+}
+
 .spotlight {
   &-container {
     position: relative;
     width: 100%;
     height: 100%;
     display: grid;
-    padding: 64px $main-column-gap;
+    row-gap: 32px;
+    box-sizing: border-box;
+    padding: 32px 0;
+    grid-template-rows: 64px 0.5 0.5fr 64px;
     box-sizing: border-box;
     background-color: $white;
 
+    @media screen and (max-width: 1200px) {
+      padding: 32px;
+    }
+
     &--left {
+      grid-template-columns: $main-column-gap $main-column-gap auto $main-column-gap;
       grid-template-areas:
-        'image title'
-        'image content';
+        'image image PLACEHOLDER-1 PLACEHOLDER-R'
+        'image image title         PLACEHOLDER-R'
+        'image image content       PLACEHOLDER-R'
+        'image image PLACEHOLDER-2 PLACEHOLDER-R';
+
+      .spotlight {
+        &-image {
+          justify-content: flex-end;
+        }
+      }
+
+      @media screen and (max-width: 1680px) {
+        grid-template-columns: $main-column-gap-1680 1fr 2fr $main-column-gap-1680;
+      }
+
+      @media screen and (max-width: 1440px) {
+        grid-template-columns: $main-column-gap-1440 1fr 2fr $main-column-gap-1440;
+      }
+
+      @media screen and (max-width: 1280px) {
+        grid-template-columns: $main-column-gap-1280 1fr 2fr $main-column-gap-1280;
+      }
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: $main-column-gap-1200 1.5fr 2fr $main-column-gap-1200;
+      }
     }
 
     &--right {
+      grid-template-columns: $main-column-gap auto $main-column-gap $main-column-gap;
       grid-template-areas:
-        'title image'
-        'content image';
+      'PLACEHOLDER-L PLACEHOLDER-1 image image'
+      'PLACEHOLDER-L title         image image'
+      'PLACEHOLDER-L content       image image'
+      'PLACEHOLDER-L PLACEHOLDER-2 image image';
+
+      .spotlight {
+        &-image {
+          justify-content: flex-start;
+        }
+      }
+
+      @media screen and (max-width: 1680px) {
+        grid-template-columns: $main-column-gap-1680 2fr 1fr $main-column-gap-1680;
+      }
+
+      @media screen and (max-width: 1440px) {
+        grid-template-columns: $main-column-gap-1440 2fr 1fr $main-column-gap-1440;
+      }
+
+      @media screen and (max-width: 1280px) {
+        grid-template-columns: $main-column-gap-1280 2fr 1fr $main-column-gap-1280;
+      }
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: $main-column-gap-1200 2fr 1.5fr $main-column-gap-1200;
+      }
     }
   }
 
   &-image {
     grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &-title {
     grid-area: title;
+
+    > h1.title {
+      font-size: 42px;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
   }
 
   &-content {
     grid-area: content;
+
+    > p.paragraph {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
   }
 }

@@ -3,6 +3,19 @@
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+  }
+
+  &-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &--home {
+      opacity: 0.5;
+      transform-origin: center center;
+      transform: translate(-280px, 150px) scale(1.1, 1.3) skew(15deg);
+    }
   }
 }
 
@@ -22,6 +35,18 @@
     &-container {
       width: calc(100% - #{$main-column-gap} * 2);
       height: 480px;
+
+      @media screen and (max-width: 1680px) {
+        width: calc(100% - #{$main-column-gap-1680} * 2);
+      }
+
+      @media screen and (max-width: 1440px) {
+        width: calc(100% - #{$main-column-gap-1440} * 2);
+      }
+
+      @media screen and (max-width: 1280px) {
+        width: calc(100% - #{$main-column-gap-1280} * 2);
+      }
     }
 
     .col-1,
@@ -46,22 +71,109 @@
       .logo-graph {
         height: 640px;
         width: 640px;
+
+        &--main-complex {
+          .logo-image {
+            opacity: 1;
+            margin-top: -18px;
+
+            @media screen and (max-width: 1440px) {
+              transform: scale(0.8);
+            }
+
+            @media screen and (max-width: 1280px) {
+              transform: scale(0.75);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logo-graph,
+  .logo-font {
+    ::selection {
+      appearance: none;
+      background-color: transparent;
+    }
+
+    > .logo-shadowed {
+      opacity: 0.25;
+
+      &.mask {
+        &--light {
+          margin: -4px 0 0 -4px;
+          filter: blur(5px);
+        }
+
+        &--dark {
+          margin: 4px 0 0 4px;
+          filter: blur(5px) invert(1);
+        }
       }
     }
   }
 
   .banner {
     &-header {
+      position: relative;
       margin: 12px 0;
+      margin-top: -12px;
 
       > h1.title {
-        font-size: 32px;
+        transform-origin: left center;
+        transform: scaleX(0.95);
+        letter-spacing: 4px;
+        font-size: 64px;
+        text-shadow: 3px 3px 6px darken($gray-1, 15%),
+          -3px -3px 6px lighten($gray-1, 15%);
+
+        ruby {
+          ruby-align: center;
+          -webkit-ruby-align: center;
+          ruby-position: over;
+          -webkit-ruby-position: over;
+
+          rt {
+            transform: scale(0.75);
+            opacity: 0;
+            font-size: 14px;
+          }
+
+          rtc {
+            color: darken($red, 15%);
+            transition: scale(1, 1.2);
+            font-size: 16px;
+          }
+        }
+
+        &:hover {
+          ruby {
+            rt {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+
+      > h2.subtitle {
+        font-size: 16px;
+        color: lighten($red, 7%);
+        text-shadow: 1px 1px 2px darken($gray-1, 7%),
+          -1px -1px 2px lighten($gray-1, 7%);
+        word-spacing: 14px;
+        margin: 8px;
+
+        @supports (-moz-appearance: none) {
+          margin: 0 8px;
+        }
       }
 
       > p.paragraph {
         margin: 12px 0;
+        margin-top: 36px;
         font-size: 16px;
-        line-height: 1.6;
+        line-height: 2;
       }
     }
   }
