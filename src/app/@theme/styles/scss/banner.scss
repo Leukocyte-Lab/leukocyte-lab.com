@@ -73,10 +73,17 @@
         width: 640px;
 
         &--main-complex {
-          .logo-image:nth-child(1) {
+          .logo-image {
             opacity: 1;
             margin-top: -18px;
-            // filter: brightness(0.5) sepia(75%) hue-rotate(-50deg) saturate(1500%);
+
+            @media screen and (max-width: 1440px) {
+              transform: scale(0.8);
+            }
+
+            @media screen and (max-width: 1280px) {
+              transform: scale(0.75);
+            }
           }
         }
       }
