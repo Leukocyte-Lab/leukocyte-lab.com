@@ -32,7 +32,9 @@
   }
 
   &--seo-only {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
   }
 }
 
