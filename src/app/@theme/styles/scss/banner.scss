@@ -138,19 +138,9 @@
         &--main-complex {
           .logo-image {
             transform: none;
-            margin-top: 32px;
-
-            @media screen and (max-width: 475px) {
-              margin: 64px 0 32px 0;
-            }
-
-            @media screen and (max-width: 414px) {
-              margin: 32px 0;
-            }
 
             @media screen and (min-width: 1024px) {
               opacity: 1;
-              margin-top: -18px;
 
               @media screen and (max-width: 1440px) {
                 transform: scale(0.8);
