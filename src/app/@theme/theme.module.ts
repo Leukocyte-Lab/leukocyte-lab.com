@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 // Banner
 import { BannerComponent } from 'src/app/@theme/components/banner/banner/banner.component';
 import { MainBannerComponent } from 'src/app/@theme/components/banner/main-banner/main-banner.component';
@@ -16,6 +18,9 @@ import { QualColumnComponent } from 'src/app/@theme/layouts/column/qual-column/q
 // Grid
 import { QuadGridComponent } from 'src/app/@theme/layouts/grid/quad-grid/quad-grid.component';
 import { HexGridComponent } from 'src/app/@theme/layouts/grid/hex-grid/hex-grid.component';
+
+// Footer
+import { FooterComponent } from 'src/app/@theme/layouts/footer/footer.component';
 
 // Spotlight
 import { SpotlightComponent } from './components/spotlight/spotlight.component';
@@ -32,7 +37,9 @@ export const components = [
   QuadGridComponent,
   HexGridComponent,
 
-  SpotlightComponent
+  SpotlightComponent,
+
+  FooterComponent
 ];
 
 export const directives = [];
@@ -45,7 +52,8 @@ export const entryComponents = [];
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    FontAwesomeModule
   ],
   exports: [CommonModule, ...components, ...entryComponents, ...directives],
   entryComponents
