@@ -711,22 +711,10 @@ p.paragraph, p.description {
 }
 .main-banner > .column .col-2 .logo-graph--main-complex .logo-image {
   transform: none;
-  margin-top: 32px;
-}
-@media screen and (max-width: 475px) {
-  .main-banner > .column .col-2 .logo-graph--main-complex .logo-image {
-    margin: 64px 0 32px 0;
-  }
-}
-@media screen and (max-width: 414px) {
-  .main-banner > .column .col-2 .logo-graph--main-complex .logo-image {
-    margin: 32px 0;
-  }
 }
 @media screen and (min-width: 1024px) {
   .main-banner > .column .col-2 .logo-graph--main-complex .logo-image {
     opacity: 1;
-    margin-top: -18px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
