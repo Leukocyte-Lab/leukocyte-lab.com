@@ -17,7 +17,8 @@
     position: relative;
     width: 100%;
     height: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 32px;
     box-sizing: border-box;
     padding: 32px 0;
@@ -25,8 +26,20 @@
     box-sizing: border-box;
     background-color: $white;
 
+    @media screen and (min-width: 768px) {
+      display: grid;
+    }
+
     @media screen and (max-width: 1200px) {
       padding: 32px;
+    }
+
+    @media screen and (max-width: 475px) {
+      padding: 24px;
+    }
+
+    @media screen and (max-width: 414px) {
+      padding: 16px;
     }
 
     &--left {
@@ -36,6 +49,14 @@
         'image image title         PLACEHOLDER-R'
         'image image content       PLACEHOLDER-R'
         'image image PLACEHOLDER-2 PLACEHOLDER-R';
+
+      @media screen and (max-width: 800px) {
+        grid-template-areas:
+          'PLACEHOLDER-L PLACEHOLDER-1 PLACEHOLDER-1 PLACEHOLDER-R'
+          'PLACEHOLDER-L title         title title'
+          'PLACEHOLDER-L content       image image'
+          'PLACEHOLDER-L PLACEHOLDER-2 image image';
+      }
 
       .spotlight {
         &-image {
@@ -63,10 +84,18 @@
     &--right {
       grid-template-columns: $main-column-gap auto $main-column-gap $main-column-gap;
       grid-template-areas:
-      'PLACEHOLDER-L PLACEHOLDER-1 image image'
-      'PLACEHOLDER-L title         image image'
-      'PLACEHOLDER-L content       image image'
-      'PLACEHOLDER-L PLACEHOLDER-2 image image';
+        'PLACEHOLDER-L PLACEHOLDER-1 image image'
+        'PLACEHOLDER-L title         image image'
+        'PLACEHOLDER-L content       image image'
+        'PLACEHOLDER-L PLACEHOLDER-2 image image';
+
+      @media screen and (max-width: 800px) {
+        grid-template-areas:
+          'PLACEHOLDER-L PLACEHOLDER-1 PLACEHOLDER-1 PLACEHOLDER-R'
+          'PLACEHOLDER-L title         title title'
+          'PLACEHOLDER-L content       image image'
+          'PLACEHOLDER-L PLACEHOLDER-2 image image';
+      }
 
       .spotlight {
         &-image {
@@ -111,6 +140,39 @@
       font-size: 42px;
       margin-bottom: 8px;
       line-height: 1.2;
+
+      @media screen and (max-width: 475px) {
+        font-size: 36px;
+      }
+
+      @media screen and (max-width: 414px) {
+        font-size: 34px;
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 32px;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 28px;
+      }
+    }
+
+    > h2.subtitle {
+      font-size: 24px;
+      line-height: 1.4;
+
+      @media screen and (max-width: 414px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -118,10 +180,29 @@
     grid-area: content;
 
     > p.paragraph {
+      font-size: 16px;
       line-height: 1.6;
       margin-bottom: 1rem;
       text-align: justify;
       text-justify: inter-ideograph;
+
+      @media screen and (max-width: 768px) {
+        br {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        text-align: left;
+      }
+
+      @media screen and (max-width: 475px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 12px;
+      }
     }
   }
 }
