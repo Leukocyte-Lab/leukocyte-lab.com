@@ -25,7 +25,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["", "lkc-home", ""]], attrs: _c0, decls: 51, vars: 3, consts: [["lkc-banner", ""], ["lkc-main-banner", "", "lkc-banner-content", ""], ["lkc-spotlight", "", 3, "type"], ["lkc-spotlight-image", ""], ["src", "assets/images/c2.svg", "alt", ""], ["lkc-spotlight-title", ""], [1, "title", "font-black"], [1, "font--seo-only"], [1, "subtitle", "font-bold"], ["lkc-spotlight-content", ""], [1, "paragraph"], ["src", "assets/images/c1.svg", "alt", ""]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["", "lkc-home", ""]], attrs: _c0, decls: 51, vars: 3, consts: [["lkc-banner", ""], ["lkc-main-banner", "", "lkc-banner-content", ""], ["lkc-spotlight", "", 3, "type"], ["lkc-spotlight-image", ""], ["src", "assets/images/c2.svg", "alt", ""], ["lkc-spotlight-title", ""], [1, "title", "font-black"], [1, "font--seo-only"], [1, "subtitle", "font-bold"], ["lkc-spotlight-content", ""], [1, "paragraph"], ["src", "assets/images/c1.png", "alt", ""]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
