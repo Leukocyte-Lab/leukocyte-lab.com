@@ -125,12 +125,14 @@
 
         @media screen and (max-width: 1600px) {
           background: linear-gradient(to right, $tone, darken($tone, 10%));
+          clip-path: polygon(36px 0%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         @media screen and (max-width: 1600px) and (min-width: 1024px) {
           margin: 0;
           padding: 24px;
           padding-right: 80px;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
         }
 
         @media screen and (max-width: 1200px) and (min-width: 1024px) {
