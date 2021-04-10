@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 // Banner
 import { BannerComponent } from 'src/app/@theme/components/banner/banner/banner.component';
 import { MainBannerComponent } from 'src/app/@theme/components/banner/main-banner/main-banner.component';
@@ -50,7 +52,8 @@ export const entryComponents = [];
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    FontAwesomeModule
   ],
   exports: [CommonModule, ...components, ...entryComponents, ...directives],
   entryComponents
