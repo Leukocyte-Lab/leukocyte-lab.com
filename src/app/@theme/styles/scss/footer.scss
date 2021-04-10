@@ -1,0 +1,170 @@
+.footer {
+  &-container {
+    position: relative;
+    background-color: $dark;
+  }
+
+  &-bg {
+    width: 100%;
+    pointer-events: none;
+  }
+
+  &-wrapper {
+    top: 0;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    &.declare {
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 0 240px 256px;
+
+      @media screen and (max-width: 1680px) {
+        padding: 0 0 180px 200px;
+        padding-top: 0;
+        padding-right: 0;
+      }
+
+      @media screen and (max-width: 1440px) {
+        padding: 0 0 128px 144px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        padding: 0 0 108px 128px;
+      }
+
+      @media screen and (max-width: 1200px) {
+        padding: 0 0 96px 108px;
+      }
+    }
+
+    &.contact {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      > .footer-content {
+        margin-right: 6%;
+
+        > h3 {
+          font-size: 20px;
+        }
+      }
+
+      .linker {
+        &-box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          color: $white;
+          margin: 18px 0;
+        }
+
+        color: inherit;
+        font-size: 16px;
+        position: relative;
+
+        &:before {
+          content: "";
+          left: -8px;
+          top: -8px;
+          position: absolute;
+          width: calc(100% + 8px * 2);
+          height: calc(100% + 8px * 2);
+        }
+
+        > .icon {
+          height: 16px;
+          width: 16px;
+        }
+
+        &:hover {
+          color: $tone;
+        }
+      }
+    }
+  }
+
+  &-content {
+    color: $white;
+    pointer-events: all;
+
+    > .logo {
+      &-font {
+        width: 240px;
+        height: auto;
+
+        @media screen and (max-width: 1440px) {
+          width: 200px;
+        }
+      }
+    }
+
+    > h2.subtitle {
+      margin-top: 18px;
+      font-size: 24px;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 20px;
+      }
+    }
+
+    > p.paragraph {
+      font-size: 12px;
+      color: $gray-4;
+      margin: 12px 0;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 1440px) {
+        margin: 8px 0;
+        font-size: 10px;
+      }
+
+      &.highlight,
+      & > .highlight {
+        font-size: 15.6px;
+        color: $tone;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 14px;
+        }
+      }
+
+      &.link {
+        margin: 8px 0;
+        font-size: 12px;
+
+        &:hover {
+          color: $tone;
+        }
+
+        .icon {
+          width: 16px;
+          height: 16px;
+          margin-right: 16px;
+        }
+
+        a.addr {
+          span {
+            &:last-child {
+              margin-left: 24px;
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
