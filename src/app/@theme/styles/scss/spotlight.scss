@@ -1,12 +1,12 @@
 [lkc-spotlight] {
   &:nth-of-type(odd) {
-    > .spotlight-container {
+    > .spotlight-container--theme-auto {
       background-color: $gray-6;
     }
   }
 
   &:nth-of-type(even) {
-    > .spotlight-container {
+    > .spotlight-container--theme-auto {
       background-color: $white;
     }
   }
@@ -117,6 +117,12 @@
 
       @media screen and (max-width: 1200px) {
         grid-template-columns: $main-column-gap-1200 2fr 1.5fr $main-column-gap-1200;
+      }
+    }
+
+    &--theme {
+      &-light {
+        background-color: $white;
       }
     }
   }
