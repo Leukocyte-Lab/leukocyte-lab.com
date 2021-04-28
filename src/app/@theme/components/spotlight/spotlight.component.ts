@@ -5,6 +5,13 @@ export enum SpotlightType {
   right
 }
 
+export enum SpotlightTheme {
+  auto,
+  light,
+  gray,
+  dark
+}
+
 @Component({
   selector: '[lkc-spotlight]',
   templateUrl: './spotlight.component.html',
@@ -12,6 +19,7 @@ export enum SpotlightType {
 })
 export class SpotlightComponent implements OnInit {
   @Input() type!: keyof typeof SpotlightType;
+  @Input() theme: keyof typeof SpotlightTheme = 'auto';
 
   constructor() { }
 
