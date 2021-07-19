@@ -2,7 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export enum SpotlightType {
   left,
-  right
+  left_thin,
+  right,
+  right_thin
 }
 
 export enum SpotlightTheme {
