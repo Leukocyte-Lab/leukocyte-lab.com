@@ -12,6 +12,8 @@
 
     &.full-size {
       height: 100vh;
+      padding: 0;
+      overflow: hidden;
     }
 
     &.dark {
@@ -96,5 +98,18 @@
         text-align: center;
       }
     }
+  }
+}
+
+.ring {
+  stroke-dasharray: 1 24.13;
+  stroke-linecap: round;
+  animation: BannerRingRotate .5s linear infinite forwards;
+}
+
+
+.banner--lkc-agh {
+  .main-logo {
+    position: absolute;
   }
 }
