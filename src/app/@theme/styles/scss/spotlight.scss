@@ -26,7 +26,7 @@
     box-sizing: border-box;
     background-color: $white;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 800px) {
       display: grid;
     }
 
@@ -50,34 +50,46 @@
         'image image content       PLACEHOLDER-R'
         'image image PLACEHOLDER-2 PLACEHOLDER-R';
 
-      @media screen and (max-width: 800px) {
+      &_thin {
+        grid-template-columns: $main-column-gap 3fr 4fr $main-column-gap;
         grid-template-areas:
-          'PLACEHOLDER-L PLACEHOLDER-1 PLACEHOLDER-1 PLACEHOLDER-R'
-          'PLACEHOLDER-L title         title title'
-          'PLACEHOLDER-L content       image image'
-          'PLACEHOLDER-L PLACEHOLDER-2 image image';
+        'PLACEHOLDER-L PLACEHOLDER-1 PLACEHOLDER-1 PLACEHOLDER-R'
+        'PLACEHOLDER-L image title         PLACEHOLDER-R'
+        'PLACEHOLDER-L image content       PLACEHOLDER-R'
+        'PLACEHOLDER-L PLACEHOLDER-2 PLACEHOLDER-2 PLACEHOLDER-R';
       }
 
-      .spotlight {
-        &-image {
-          justify-content: flex-end;
+      &,
+      &_thin {
+        @media screen and (max-width: 800px) {
+          grid-template-areas:
+            'PLACEHOLDER-L PLACEHOLDER-1 PLACEHOLDER-1 PLACEHOLDER-R'
+            'PLACEHOLDER-L title         title title'
+            'PLACEHOLDER-L content       image image'
+            'PLACEHOLDER-L PLACEHOLDER-2 image image';
         }
-      }
 
-      @media screen and (max-width: 1680px) {
-        grid-template-columns: $main-column-gap-1680 1fr 2fr $main-column-gap-1680;
-      }
+        .spotlight {
+          &-image {
+            justify-content: flex-end;
+          }
+        }
 
-      @media screen and (max-width: 1440px) {
-        grid-template-columns: $main-column-gap-1440 1fr 2fr $main-column-gap-1440;
-      }
+        @media screen and (max-width: 1680px) {
+          grid-template-columns: $main-column-gap-1680 1fr 2fr $main-column-gap-1680;
+        }
 
-      @media screen and (max-width: 1280px) {
-        grid-template-columns: $main-column-gap-1280 1fr 2fr $main-column-gap-1280;
-      }
+        @media screen and (max-width: 1440px) {
+          grid-template-columns: $main-column-gap-1440 1fr 2fr $main-column-gap-1440;
+        }
 
-      @media screen and (max-width: 1200px) {
-        grid-template-columns: $main-column-gap-1200 1.5fr 2fr $main-column-gap-1200;
+        @media screen and (max-width: 1280px) {
+          grid-template-columns: $main-column-gap-1280 1fr 2fr $main-column-gap-1280;
+        }
+
+        @media screen and (max-width: 1200px) {
+          grid-template-columns: $main-column-gap-1200 1.5fr 2fr $main-column-gap-1200;
+        }
       }
     }
 
@@ -89,34 +101,46 @@
         'PLACEHOLDER-L content       image image'
         'PLACEHOLDER-L PLACEHOLDER-2 image image';
 
-      @media screen and (max-width: 800px) {
+      &_thin {
+        grid-template-columns: $main-column-gap 4fr 3fr $main-column-gap;
         grid-template-areas:
           'PLACEHOLDER-L PLACEHOLDER-1 PLACEHOLDER-1 PLACEHOLDER-R'
-          'PLACEHOLDER-L title         title title'
-          'PLACEHOLDER-L content       image image'
-          'PLACEHOLDER-L PLACEHOLDER-2 image image';
+          'PLACEHOLDER-L title         title PLACEHOLDER-R'
+          'PLACEHOLDER-L content       image PLACEHOLDER-R'
+          'PLACEHOLDER-L PLACEHOLDER-2 PLACEHOLDER-2 PLACEHOLDER-R';
       }
 
-      .spotlight {
-        &-image {
-          justify-content: flex-start;
+      &,
+      &_thin {
+        @media screen and (max-width: 800px) {
+          grid-template-areas:
+            'PLACEHOLDER-L PLACEHOLDER-1 PLACEHOLDER-1 PLACEHOLDER-R'
+            'PLACEHOLDER-L title         title title'
+            'PLACEHOLDER-L content       image image'
+            'PLACEHOLDER-L PLACEHOLDER-2 image image';
         }
-      }
 
-      @media screen and (max-width: 1680px) {
-        grid-template-columns: $main-column-gap-1680 2fr 1fr $main-column-gap-1680;
-      }
+        .spotlight {
+          &-image {
+            justify-content: flex-start;
+          }
+        }
 
-      @media screen and (max-width: 1440px) {
-        grid-template-columns: $main-column-gap-1440 2fr 1fr $main-column-gap-1440;
-      }
+        @media screen and (max-width: 1680px) {
+          grid-template-columns: $main-column-gap-1680 2fr 1fr $main-column-gap-1680;
+        }
 
-      @media screen and (max-width: 1280px) {
-        grid-template-columns: $main-column-gap-1280 2fr 1fr $main-column-gap-1280;
-      }
+        @media screen and (max-width: 1440px) {
+          grid-template-columns: $main-column-gap-1440 2fr 1fr $main-column-gap-1440;
+        }
 
-      @media screen and (max-width: 1200px) {
-        grid-template-columns: $main-column-gap-1200 2fr 1.5fr $main-column-gap-1200;
+        @media screen and (max-width: 1280px) {
+          grid-template-columns: $main-column-gap-1280 2fr 1fr $main-column-gap-1280;
+        }
+
+        @media screen and (max-width: 1200px) {
+          grid-template-columns: $main-column-gap-1200 2fr 1.5fr $main-column-gap-1200;
+        }
       }
     }
 
